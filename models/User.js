@@ -1,13 +1,7 @@
 const bcrypt = require('bcrypt-nodejs');
 const crypto = require('crypto');
 const mongoose = require('mongoose');
-
-/**
- * Tag schema, for tagging user offerings
- */
-const tagSchema = mongoose.Schema({
-  name: String
-});
+const tag = require('./Tag.js');
 
 const userSchema = new mongoose.Schema({
   email: { type: String, unique: true },
@@ -32,7 +26,7 @@ const userSchema = new mongoose.Schema({
     website: String,
     picture: String
   },
-  tags: [tagSchema]
+  tags: { type: [tag.tagSchema], default: [] },
 }, { timestamps: true });
 
 /**
