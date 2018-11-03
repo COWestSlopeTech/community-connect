@@ -23,6 +23,7 @@ const userSchema = new mongoose.Schema({
   linkedin: String,
   steam: String,
   tokens: Array,
+  skills: Array,
 
   profile: {
     name: String,
