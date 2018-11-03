@@ -1,5 +1,6 @@
+
 ![](https://lh4.googleusercontent.com/-PVw-ZUM9vV8/UuWeH51os0I/AAAAAAAAD6M/0Ikg7viJftQ/w1286-h566-no/hackathon-starter-logo.jpg)
-Hackathon Starter 
+Hackathon Starter
 =======================
 
 [![Dependency Status](https://david-dm.org/sahat/hackathon-starter/status.svg?style=flat)](https://david-dm.org/sahat/hackathon-starter) [![Build Status](https://travis-ci.org/sahat/hackathon-starter.svg?branch=master)](https://travis-ci.org/sahat/hackathon-starter) [![Join the chat at https://gitter.im/sahat/hackathon-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sahat/hackathon-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -195,7 +196,7 @@ The same goes for other providers.
 - Enter a new name for your app
 - Click on the **Create App ID** button
 - Find the Facebook Login Product and click on **Facebook Login**
-- Instead of going through their Quickstart, click on **Settings** for your app in the top left corner 
+- Instead of going through their Quickstart, click on **Settings** for your app in the top left corner
 - Copy and paste *App ID* and *App Secret* keys into `.env`
 - **Note:** *App ID* is **FACEBOOK_ID**, *App Secret* is **FACEBOOK_SECRET** in `.env`
 - Enter `localhost` under *App Domains*
@@ -1136,7 +1137,7 @@ var YYYY = now.getFullYear();
 
 if (DD < 10) {
   DD = '0' + DD;
-} 
+}
 
 if (MM < 10) {
   MM = '0' + MM;
@@ -1234,13 +1235,13 @@ User.aggregate({ $group: { _id: null, total: { $sum: '$votes' } } }, (err, votes
 Docker
 ----------
 
-You will need docker and docker-compose installed to build the application. 
+You will need docker and docker-compose installed to build the application.
 
 - [Docker installation](https://docs.docker.com/engine/installation/)
 
 - [Common problems setting up docker](https://docs.docker.com/toolbox/faqs/troubleshoot/)
 
-After installing docker, start the application with the following commands : 
+After installing docker, start the application with the following commands :
 
 ```
 # To build the project for the first time or when you add dependencies
@@ -1439,7 +1440,7 @@ Be sure to check out the full list of Watson services to forwarder enhance your 
 
 **<img src="https://wbi.mybluemix.net/icons/text-to-speech.svg?version=2" width="25"> [Text to Speech](https://www.ibm.com/watson/services/text-to-speech/)** - Convert written text into natural sounding audio in a variety of languages and voices.  
 
-**<img src="https://wbi.mybluemix.net/icons/tone-analyzer.svg?version=2" width="25"> [Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/)** - Understand emotions, social tendencies and perceived writing style. 
+**<img src="https://wbi.mybluemix.net/icons/tone-analyzer.svg?version=2" width="25"> [Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/)** - Understand emotions, social tendencies and perceived writing style.
 
 **<img src="https://kpprod1.alchemyapi.com/images/vis_rec.svg" width="25"> [Visual Recognition](https://www.ibm.com/watson/services/visual-recognition/)** - Tag, classify and search visual content using machine learning.
 
