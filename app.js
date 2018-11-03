@@ -31,6 +31,7 @@ dotenv.load({ path: '.env.example' });
  * Controllers (route handlers).
  */
 const splashController = require('./controllers/splash');
+const relationshipsController = require('./controllers/relationships');
 const homeController = require('./controllers/home');
 const userController = require('./controllers/user');
 const apiController = require('./controllers/api');
@@ -126,7 +127,9 @@ app.use('/webfonts', express.static(path.join(__dirname, 'node_modules/@fortawes
 /**
  * Primary app routes.
  */
+ app.get('/home', homeController.index);
 app.get('/', splashController.index);
+app.get('/relationships', relationshipsController.index);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
