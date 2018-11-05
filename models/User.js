@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt-nodejs');
 const crypto = require('crypto');
 const mongoose = require('mongoose');
+const tag = require('./Tag.js');
 
 const userSchema = new mongoose.Schema({
   email: { type: String, unique: true },
@@ -23,7 +24,8 @@ const userSchema = new mongoose.Schema({
     location: String,
     website: String,
     picture: String
-  }
+  },
+  tags: { type: [tag.tagSchema], default: [] },
 }, { timestamps: true });
 
 /**
